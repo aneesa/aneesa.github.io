@@ -91,6 +91,7 @@ HEADER
 .header{
     background: url('../img/01-header-banner.jpg') no-repeat fixed;
     background-size: cover;
+		background-position: center;
     min-height: 650px;
     position: relative;
 }
@@ -704,25 +705,36 @@ Responsive media queries
 ************************************
 ***********************************/
 @media (min-width: 768px) and (max-width: 980px) {
-    .service-item, .blog-sec, .wrap-item, .loction-info{
-    margin-bottom: 15px;
-}
-.portfolio-item figure figcaption{
-    padding: 55px 30px;
-}
-.padding-right-zero{
-    padding-right: 15px !important;
-}
+  .service-item, .blog-sec, .wrap-item, .loction-info{
+	    margin-bottom: 15px;
+	}
+	.portfolio-item figure figcaption{
+	    padding: 55px 30px;
+	}
+	.padding-right-zero{
+	    padding-right: 15px !important;
+	}
+  /** "Add" margin-left between img.profile-icon
+			Force icon to be circle
+	**/
+	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 0px;
+		width: 45px;
+	}
 }
 @media (min-width: 451px) and (max-width: 767px) {
-    .service-item, .blog-sec, .wrap-item, .loction-info{
+  .service-item, .blog-sec, .wrap-item, .loction-info{
     margin-bottom: 15px;
-}
+	}
 }
 @media (min-width: 20px) and (max-width: 450px) {
+	/** Add margin-left between img.profile-icon
+			Force icon to be circle
+	**/
 	.navbar-default .navbar-brand {
-	    padding-left: 16px;
+	    margin-left: 15px;
 	    margin-top: 0px;
+			width: 40px;
 	}
 	.banner-info {
 	    padding-top: 210px;
