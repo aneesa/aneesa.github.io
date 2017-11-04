@@ -24,7 +24,7 @@
     });
 
     // Home section scroll
-    $(".navbar-header a").on('click', function(event) {
+    $(".navbar-header img").on('click', function(event) {
         event.preventDefault();
         $('.navbar-nav li').removeClass('active');
         $('.navbar-nav li:first').addClass('active');

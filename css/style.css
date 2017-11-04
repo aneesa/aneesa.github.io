@@ -137,6 +137,11 @@ img.profile-icon {
 		margin: 0;
 }
 
+a.social-icon {
+	color: white;
+	margin-left: 10px;
+}
+
 .top-nav-collapse {
     padding: 0;
     background: rgba(73, 82, 86, 0.9);
